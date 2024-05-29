@@ -1,0 +1,51 @@
+// Color Palette
+$primary-color: #004577; // Updated to a more standard blue
+$success-color: #006699; // Harmonized with primary color
+$highlight-color: #FF9933; // Softer red for better harmony
+$border-color: #000000; // Slightly lighter for a modern look
+$background-color-light: #FFC266; // Light grey for better contrast
+$background-color-header: #006699; // Slightly darker grey for headers
+$text-color: #FFFFFF; // Dark grey for primary text
+$text-color-light: #FFFFFF; // Light grey for secondary text
+$overlay-color: #FFFFFF;
+// Animations
+$transition-duration: 3s;
+// Spacing
+$padding: 10px;
+$margin: 15px;
+
+// Shadows
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+$box-shadow-heavy: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+// Borders
+$border-radius: 5px;
+$border-width: 1px;
+
+// Typography
+$font-family: 'Arial, sans-serif';
+$font-size-base: 14px;
+$font-size-large: 18px;
+$font-size-small: 12px;
+
+// Buttons
+$button-padding: 10px 20px;
+$button-radius: 5px;
+
+// Inputs
+$input-padding: 8px 12px;
+$input-border-radius: 3px;
+$input-border-color: #CCCCCC;
+
+// Additional Element Styles
+$dropdown-background: #FFFFFF;
+$dropdown-border: #E0E0E0;
+$dropdown-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+$table-header-background: #E9E9E9;
+$table-row-background: #FFFFFF;
+$table-row-hover-background: #F1F1F1;
+
+$modal-background: rgba(0, 0, 0, 0.6);
+$modal-content-background: #FFFFFF;
+$modal-content-padding: 20px;

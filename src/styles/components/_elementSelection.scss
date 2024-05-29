@@ -1,0 +1,35 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  background-color: $background-color-light;
+  padding: $padding;
+  border: $border-width solid $border-color;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+}
+
+.inline-input {
+  margin-bottom: $margin;
+}
+
+.input-button {
+  margin: $margin 0;
+  padding: $button-padding;
+  background-color: $primary-color;
+  color: $text-color;
+  border: none;
+  border-radius: $button-radius;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.highlighted-element {
+  outline: 2px solid rgba(255, 153, 51, 0.5); // moderate to low opacity highlight
+}

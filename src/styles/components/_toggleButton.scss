@@ -1,0 +1,47 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.toggle-pane {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 30px;
+  background-color: $background-color-light;
+  border: $border-width solid $border-color;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  box-shadow: $box-shadow;
+  z-index: 10000;
+  cursor: pointer;
+  transition: height 0.3s ease;
+
+  &.expanded {
+    height: 300px;
+  }
+
+  .toggle-button {
+    width: 20px;
+    height: 20px;
+    background-color: $primary-color;
+    border-radius: 50%;
+    margin: $padding;
+    cursor: pointer;
+  }
+
+  .view-saved-button {
+    margin-left: $padding;
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: $button-padding;
+    cursor: pointer;
+    border-radius: $button-radius;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}

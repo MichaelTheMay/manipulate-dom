@@ -1,0 +1,17 @@
+@mixin box-shadow {
+    box-shadow: $box-shadow;
+  }
+  
+  @mixin border-box {
+    border: 1px solid $border-color;
+    padding: $padding;
+  }
+  
+  @mixin button($color) {
+    background-color: $color;
+    color: white;
+    border: none;
+    padding: $padding;
+    cursor: pointer;
+  }
+  

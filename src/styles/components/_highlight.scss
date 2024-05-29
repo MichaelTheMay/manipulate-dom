@@ -1,0 +1,5 @@
+@import '../utils/variables';
+
+.highlight {
+  outline: 2px solid $highlight-color !important;
+}

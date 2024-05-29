@@ -1,0 +1,62 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.element-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: $margin 0;
+  font-size: $font-size-base;
+  color: $text-color;
+
+  th, td {
+    padding: $padding;
+    border: $border-width solid $border-color;
+  }
+
+  th {
+    background-color: $background-color-header;
+    color: $text-color;
+    text-align: center;
+  }
+
+  tr:nth-child(even) {
+    background-color: lighten($background-color-light, 10%);
+  }
+
+  tr:nth-child(odd) {
+    background-color: $background-color-light;
+  }
+
+  tr:hover {
+    background-color: $highlight-color;
+    color: $text-color;
+  }
+
+  td {
+    text-align: left;
+  }
+}
+
+.dropdown-button {
+  display: block;
+  margin-bottom: $margin;
+  background-color: $primary-color;
+  color: $text-color;
+  border: none;
+  padding: $button-padding;
+  cursor: pointer;
+  border-radius: $button-radius;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.dropdown-popup {
+  padding: $padding;
+  background-color: $background-color-light;
+  border: $border-width solid $border-color;
+  border-radius: $border-radius;
+  box-shadow: $dropdown-shadow;
+}
